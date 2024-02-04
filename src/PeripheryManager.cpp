@@ -36,6 +36,15 @@ const char *message = "HELLO"; // Die Nachricht, die gesendet werden soll
 #define DFPLAYER_TX D5
 #define I2C_SCL_PIN D1
 #define I2C_SDA_PIN D3
+#elif ESP32_S2
+#define LDR_PIN 35
+#define BATTERY_PIN 8
+#define BUZZER_PIN 7
+#define BUTTON_UP_PIN 6
+#define BUTTON_SELECT_PIN 5
+#define BUTTON_DOWN_PIN 4
+#define I2C_SCL_PIN 37
+#define I2C_SDA_PIN 36
 #elif ESP32_S3
 #define BATTERY_PIN 4
 #define BUZZER_PIN 5
@@ -47,8 +56,6 @@ const char *message = "HELLO"; // Die Nachricht, die gesendet werden soll
 #define I2C_SDA_PIN 11
 #else
 // Pinouts für das ULANZI-Environment
-#define BATTERY_PIN 34
-#define BUZZER_PIN 15
 #define LDR_PIN 35
 #define BUTTON_UP_PIN 26
 #define BUTTON_DOWN_PIN 14

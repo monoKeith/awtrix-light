@@ -35,10 +35,10 @@ int previousDataLength = 0;
 
 #ifdef awtrix2_upgrade
 #define MATRIX_PIN D2
-#elif defined(ESP32_S2)
+#elif ESP32_S2
 #define MATRIX_PIN 33
-#elif defined(ESP32_S3)
-#define MATRIX_PIN 17
+#elif ESP32_S3
+#define MATRIX_PIN 32
 #else
 #define MATRIX_PIN 32
 #endif
