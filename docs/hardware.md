@@ -16,7 +16,7 @@ if you want to build your own AWTRIX Light, here are the pinout of the Ulanzi cl
 | 21/22 | Temperature and Humidity Sensors (SHT3x)      |
 
 
-### ESP32 S2
+### ESP32 S2 PINOUT_keith
 
 | GPIO  | Usage or part                                 |
 |-------|-----------------------------------------------|
@@ -24,6 +24,8 @@ if you want to build your own AWTRIX Light, here are the pinout of the Ulanzi cl
 | 37    | SCL Temperature and Humidity Sensors (SHT3x)  |
 | 35    | LDR (light) sensor (GL5516)                   |
 | 33    | Matrix                                        |
+| 20    | DF player RX                                  |
+| 19    | DF player TX                                  |
 | 8     | Battery sensor                                |
 | 7     | Buzzer                                        |
 | 6     | Right button                                  |

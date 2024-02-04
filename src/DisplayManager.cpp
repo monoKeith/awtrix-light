@@ -33,10 +33,10 @@ bool universesReceived[maxUniverses];
 bool sendFrame = 1;
 int previousDataLength = 0;
 
-#ifdef awtrix2_upgrade
-#define MATRIX_PIN D2
-#elif ESP32_S2
+#ifdef PINOUT_keith
 #define MATRIX_PIN 33
+#elif awtrix2_upgrade
+#define MATRIX_PIN D2
 #elif ESP32_S3
 #define MATRIX_PIN 33
 #else

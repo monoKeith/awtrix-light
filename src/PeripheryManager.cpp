@@ -26,7 +26,18 @@ const char *message = "HELLO"; // Die Nachricht, die gesendet werden soll
 #define LEDC_TIMER LEDC_TIMER_0
 #define LEDC_MODE LEDC_LOW_SPEED_MODE
 
-#ifdef awtrix2_upgrade
+#ifdef PINOUT_keith
+#define I2C_SCL_PIN 37
+#define I2C_SDA_PIN 36
+#define LDR_PIN 35
+#define DFPLAYER_RX 20
+#define DFPLAYER_TX 19
+#define BATTERY_PIN 8
+#define BUZZER_PIN 7
+#define BUTTON_UP_PIN 6
+#define BUTTON_SELECT_PIN 5
+#define BUTTON_DOWN_PIN 4
+#elif awtrix2_upgrade
 // Pinouts für das WEMOS_D1_MINI32-Environment
 #define LDR_PIN A0
 #define BUTTON_UP_PIN D0
@@ -36,15 +47,6 @@ const char *message = "HELLO"; // Die Nachricht, die gesendet werden soll
 #define DFPLAYER_TX D5
 #define I2C_SCL_PIN D1
 #define I2C_SDA_PIN D3
-#elif ESP32_S2
-#define I2C_SCL_PIN 37
-#define I2C_SDA_PIN 36
-#define LDR_PIN 35
-#define BATTERY_PIN 8
-#define BUZZER_PIN 7
-#define BUTTON_UP_PIN 6
-#define BUTTON_SELECT_PIN 5
-#define BUTTON_DOWN_PIN 4
 #elif ESP32_S3
 #define BATTERY_PIN 4
 #define BUZZER_PIN 5
