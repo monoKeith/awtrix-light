@@ -56,6 +56,8 @@ const char *message = "HELLO"; // Die Nachricht, die gesendet werden soll
 #define I2C_SDA_PIN 11
 #else
 // Pinouts für das ULANZI-Environment
+#define BATTERY_PIN 34
+#define BUZZER_PIN 15
 #define LDR_PIN 35
 #define BUTTON_UP_PIN 26
 #define BUTTON_DOWN_PIN 14

@@ -38,7 +38,7 @@ int previousDataLength = 0;
 #elif ESP32_S2
 #define MATRIX_PIN 33
 #elif ESP32_S3
-#define MATRIX_PIN 32
+#define MATRIX_PIN 33
 #else
 #define MATRIX_PIN 32
 #endif
